@@ -6,7 +6,7 @@ function StreetList() {
    const [streets, setStreets] = React.useState([]);
 
    React.useEffect(() => {
-      fetch('/streets')
+      fetch('/api/streets')
          .then(data => data.json())
          .then(streets => setStreets(streets))
    }, []);

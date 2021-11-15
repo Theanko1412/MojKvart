@@ -6,7 +6,7 @@ function DistrictList() {
    const [streets, setStreets] = React.useState([]);
 
    React.useEffect(() => {
-      fetch('/districts')
+      fetch('/api/districts')
          .then(data => data.json())
          .then(streets => setStreets(streets))
    }, []);

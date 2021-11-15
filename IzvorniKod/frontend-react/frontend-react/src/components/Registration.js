@@ -31,7 +31,7 @@ function Registration(props) {
          },
          body: JSON.stringify(data)
       };
-      fetch('/registration', options)
+      fetch('/api/registration', options)
          .then(response => {
             console.log(response);
             if (!response.ok) {

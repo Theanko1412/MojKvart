@@ -22,7 +22,7 @@ function DistrictForm(props) {
          body: JSON.stringify(data)
       };
 
-      return fetch('/districts', options).then(response => {
+      return fetch('/api/districts', options).then(response => {
          if (response.ok) {
             props.history.push('/districts');
          }

@@ -8,7 +8,7 @@ function Header(props) {
    let checkLogin = false;
 
    function logout() {
-      fetch("/logout").then(() => {
+      fetch("/api/logout").then(() => {
          props.onLogout();
       });
    }

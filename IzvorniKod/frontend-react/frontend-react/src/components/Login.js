@@ -26,7 +26,7 @@ function Login(props) {
          },
          body: body
       };
-      fetch('/login', options)
+      fetch('/api/login', options)
          .then(response => {
             console.log(response);
             if (!response.ok) {

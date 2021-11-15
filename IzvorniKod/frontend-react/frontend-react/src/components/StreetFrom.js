@@ -30,7 +30,7 @@ function StreetForm(props) {
          body: JSON.stringify(data)
       };
 
-      return fetch('/streets', options).then(response => {
+      return fetch('/api/streets', options).then(response => {
          if (response.ok) {
             props.history.push('/streets');
          }
